@@ -1,4 +1,4 @@
-package com.dening.learn.spring.boot.web.learnspringbootweb;
+package com.dening.learn.spring.boot.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,5 +9,4 @@ public class LearnSpringBootWebApplication {
     public static void main(String[] args) {
         SpringApplication.run(LearnSpringBootWebApplication.class, args);
     }
-
 }

@@ -2,22 +2,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
+    <!-- 继承说明：这里继承SpringBoot提供的父工程 -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.4.5</version>
+        <!-- 设置为空值，始终从仓库中获取，不从本地路径获取 -->
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+    <!-- 模块基本信息 -->
     <groupId>com.dening.learn.spring.boot</groupId>
     <artifactId>learn-spring-boot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-
+    <!-- 项目打包类型：pom:无代码只是为了聚合工程或传递依赖；jar(默认): 内部调用或提供服务；war：部署 -->
+    <packaging>pom</packaging>
     <name>learn-spring-boot</name>
-    <description>Demo project for Spring Boot</description>
+    <description>所有模块的父模块</description>
 
     <properties>
-        <java.version>16</java.version>
+        <java.version>1.8</java.version>
     </properties>
 
     <!-- 模块说明：这里声明多个子模块 -->
@@ -27,5 +32,38 @@
         <module>learn-spring-boot-service</module>
         <module>learn-spring-boot-web</module>
     </modules>
+
+    <!-- 版本说明：这里统一管理各子模块依赖的版本号 -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- 内部模块依赖管理 -->
+            <!-- 内部公共模块 -->
+            <dependency>
+                <groupId>com.dening.learn.spring.boot</groupId>
+                <artifactId>learn-spring-boot-common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <!-- 内部mybatis模板以及拓展代码模块 -->
+            <dependency>
+                <groupId>com.dening.learn.spring.boot</groupId>
+                <artifactId>learn-spring-boot-dao</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <!-- 内部业务代码模块 -->
+            <dependency>
+                <groupId>com.dening.learn.spring.boot</groupId>
+                <artifactId>learn-spring-boot-service</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <!-- 对外开放Api代码模块 -->
+            <dependency>
+                <groupId>com.dening.learn.spring.boot</groupId>
+                <artifactId>learn-spring-boot-web</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <!-- 第三方依赖管理，子模块从这里引用 -->
+
+        </dependencies>
+    </dependencyManagement>
 
 </project>

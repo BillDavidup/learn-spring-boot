@@ -1,0 +1,14 @@
+server:
+  # 服务端口号配置
+  port: 9001
+  tomcat:
+    threads:
+      max: 3000
+#选择哪一个环境的配置
+spring:
+  profiles:
+    active: dev
+  # api接口根路径
+  mvc:
+    servlet:
+      path: /
