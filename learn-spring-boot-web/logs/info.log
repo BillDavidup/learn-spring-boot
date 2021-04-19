@@ -1,0 +1,12 @@
+2021-04-19 18:37:45:679  [] [main] [org.springframework.boot.StartupInfoLogger:55] - Starting LearnTest using Java 1.8.0_251 on wudeningdeMacBook-Pro.local with PID 2905 (started by wudening in /Users/wudening/IdeaProjects/learn-spring-boot/learn-spring-boot-web)
+2021-04-19 18:37:45:681  [] [main] [org.springframework.boot.SpringApplication:679] - The following profiles are active: dev
+2021-04-19 18:37:46:208  [] [main] [org.springframework.boot.StartupInfoLogger:61] - Started LearnTest in 1.246 seconds (JVM running for 2.304)
+2021-04-19 18:37:46:448  [] [main] [com.dening.learn.spring.boot.web.LearnTest:17] - 测试接入日志
+2021-04-19 18:38:15:634  [] [main] [org.springframework.boot.StartupInfoLogger:55] - Starting LearnTest using Java 1.8.0_251 on wudeningdeMacBook-Pro.local with PID 2914 (started by wudening in /Users/wudening/IdeaProjects/learn-spring-boot/learn-spring-boot-web)
+2021-04-19 18:38:15:636  [] [main] [org.springframework.boot.SpringApplication:679] - The following profiles are active: dev
+2021-04-19 18:38:16:227  [] [main] [org.springframework.boot.StartupInfoLogger:61] - Started LearnTest in 1.11 seconds (JVM running for 2.043)
+2021-04-19 18:38:16:398  [] [main] [com.dening.learn.spring.boot.web.LearnTest:17] - spring boot 2项目，测试接入logback日志
+2021-04-19 18:43:52:769 [] [main] [org.springframework.boot.StartupInfoLogger:55] - Starting LearnTest using Java 1.8.0_251 on wudeningdeMacBook-Pro.local with PID 3227 (started by wudening in /Users/wudening/IdeaProjects/learn-spring-boot/learn-spring-boot-web)
+2021-04-19 18:43:52:770 [] [main] [org.springframework.boot.SpringApplication:679] - The following profiles are active: dev
+2021-04-19 18:43:53:349 [] [main] [org.springframework.boot.StartupInfoLogger:61] - Started LearnTest in 1.344 seconds (JVM running for 2.258)
+2021-04-19 18:43:53:573 [] [main] [com.dening.learn.spring.boot.web.LearnTest:17] - spring boot 2项目，测试接入logback日志
