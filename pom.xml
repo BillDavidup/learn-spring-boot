@@ -62,6 +62,12 @@
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <!-- 第三方依赖管理，子模块从这里引用 -->
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>1.25</version>
+                <type>bundle</type>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
